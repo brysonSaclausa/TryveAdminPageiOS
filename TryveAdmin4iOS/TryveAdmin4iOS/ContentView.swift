@@ -16,8 +16,9 @@ struct ContentView: View {
     let difficultyLevel = ["1", "2", "3","4"]
     
     func testParseConnection(){
-        let myObj = PFObject(className:"FirstClass")
-        myObj["message"] = "Hey ! Second message from Bryson!!!. Parse is now connected"
+        let myObj = PFObject(className:"Goal")
+        myObj["title"] = "Dummy Goal"
+        myObj["description"] = "Hey ! fourth message from Bryson!!!. Parse is now connected"
         myObj.saveInBackground { (success, error) in
             if(success){
                 print("You are connected!")
