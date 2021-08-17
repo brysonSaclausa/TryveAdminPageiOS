@@ -15,10 +15,15 @@ struct ContentView: View {
     @State var difficulty = ""
     let difficultyLevel = ["1", "2", "3","4"]
     
+    //Stepper
+    @State private var value = 0
+    var step = 5
+    let range = 1...50
+    
     func testParseConnection(){
         let myObj = PFObject(className:"Goal")
-        myObj["title"] = "Dummy Goal"
-        myObj["description"] = "Hey ! fourth message from Bryson!!!. Parse is now connected"
+        myObj["title"] = "\(title)"
+        myObj["description"] = "\(descriptopm)"
         myObj.saveInBackground { (success, error) in
             if(success){
                 print("You are connected!")
@@ -43,19 +48,18 @@ struct ContentView: View {
                             ForEach(difficultyLevel, id: \.self) {
                                 Text($0)
                             }
+                        }
+                        
+                        Stepper("Level") {
+                            
+                        } onDecrement: {
                             
                         }
-                        Button("Check Parse Connection") {
-                            //PARSE
-                            testParseConnection()
-                        }
-                        
-                        
-                        
-                        
                         
                     }//
-                    
+                    Button("Check Parse Connection") {
+                        testParseConnection()
+                    }
                 }
                 .navigationTitle("POST")
             }
