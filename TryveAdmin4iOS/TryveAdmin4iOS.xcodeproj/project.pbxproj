@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		7C39C17726C6E30F0041250F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C39C17626C6E30F0041250F /* Assets.xcassets */; };
 		7C39C17A26C6E30F0041250F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C39C17926C6E30F0041250F /* Preview Assets.xcassets */; };
 		7C39C17D26C6E30F0041250F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C39C17B26C6E30F0041250F /* LaunchScreen.storyboard */; };
+		7C99F50726DECE4C00F83FF7 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99F50626DECE4C00F83FF7 /* PostView.swift */; };
+		7C99F50926DECEFF00F83FF7 /* FetchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99F50826DECEFF00F83FF7 /* FetchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		7C39C17926C6E30F0041250F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C39C17C26C6E30F0041250F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C39C17E26C6E30F0041250F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C99F50626DECE4C00F83FF7 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		7C99F50826DECEFF00F83FF7 /* FetchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchView.swift; sourceTree = "<group>"; };
 		A145345A761DA4DE231E1D9E /* Pods-TryveAdmin4iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryveAdmin4iOS.debug.xcconfig"; path = "Target Support Files/Pods-TryveAdmin4iOS/Pods-TryveAdmin4iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +78,8 @@
 				7C39C17026C6E30D0041250F /* AppDelegate.swift */,
 				7C39C17226C6E30D0041250F /* SceneDelegate.swift */,
 				7C39C17426C6E30D0041250F /* ContentView.swift */,
+				7C99F50626DECE4C00F83FF7 /* PostView.swift */,
+				7C99F50826DECEFF00F83FF7 /* FetchView.swift */,
 				7C39C17626C6E30F0041250F /* Assets.xcassets */,
 				7C39C17B26C6E30F0041250F /* LaunchScreen.storyboard */,
 				7C39C17E26C6E30F0041250F /* Info.plist */,
@@ -96,7 +102,6 @@
 				A145345A761DA4DE231E1D9E /* Pods-TryveAdmin4iOS.debug.xcconfig */,
 				4FB0B6113DD7AA067CE36957 /* Pods-TryveAdmin4iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -216,7 +221,9 @@
 			files = (
 				7C39C17126C6E30D0041250F /* AppDelegate.swift in Sources */,
 				7C39C17326C6E30D0041250F /* SceneDelegate.swift in Sources */,
+				7C99F50726DECE4C00F83FF7 /* PostView.swift in Sources */,
 				7C39C17526C6E30D0041250F /* ContentView.swift in Sources */,
+				7C99F50926DECEFF00F83FF7 /* FetchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
