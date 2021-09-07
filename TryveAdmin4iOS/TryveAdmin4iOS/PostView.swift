@@ -31,12 +31,11 @@ struct PostView: View {
         let myObj = PFObject(className:"Goal")
         myObj["title"] = "\(title)"
         myObj["description"] = "\(descriptopm)"
-//        myObj["description"] = "\(difficulty)"
-//        myObj["investmentMin"] = "\(investmentMin)"
-        
+        myObj["difficulty"] = 111
         myObj.saveInBackground { (success, error) in
             if(success){
                 print("You are connected!")
+                
             }else{
                 print("An error has occurred!")
             }
@@ -57,6 +56,7 @@ struct PostView: View {
                         Picker("Select Difficulty", selection: $difficulty) {
                             ForEach(difficultyLevel, id: \.self) {
                                 Text($0)
+                                
                             }
                         }
                         
@@ -91,17 +91,15 @@ struct PostView: View {
     }
     
     /*
+     GOAL Attributes
      "title": "Brys Custom Goal",
      "description" : "brys was here again"
      "difficulty": 2,
-     
      "rewardMin": 6,
      "rewardMax": 8,
      "investmentMin": 2,
      "investementMax": 22,
-     
      "attachmentReqd": true,
-     
      */
 }
 
